@@ -11,7 +11,7 @@ public class discordInviteChecker implements ActionListener {
 
 
 
-    private void call_me() throws Exception {
+    private void discord_invite() throws Exception {
 
         String url = "https://discord.com/api/v6/invite/" + mainHandler.inviteText.getText();
         URL obj = new URL(url);
@@ -94,7 +94,7 @@ public class discordInviteChecker implements ActionListener {
             case "Find Info":
                 try {
                     String code = mainHandler.inviteText.getText();
-                    call_me();
+                    discord_invite();
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(mainHandler.frame,ex,"Alert",JOptionPane.WARNING_MESSAGE);
                 }
